@@ -1,0 +1,24 @@
+interface ITransactionDAL {
+	getTransactionByPaymentId(uuid);
+      getAllTransactions();
+}
+
+class TransactionDAL {
+	private Conncetion conn
+	TransactionDAL(Conncetion dbConn)
+	{
+		conn = dbConn;
+	}
+	getTransactionByPaymentId (uuid)
+	{
+		return conn.query;
+	}
+	getAllTransactions()
+	{
+		return query;
+	}
+}
+
+ ITransactionDAL trDal = new TransactionDAL();
+ 
+ trResult = trDal.getTransactionByPaymentId(uuid)
